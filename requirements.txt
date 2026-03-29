@@ -5,3 +5,9 @@ pandas
 matplotlib
 scikit-learn
 streamlit
+nltk
+beautifulsoup4
+requests
+plotly
+pytz
+holidays
