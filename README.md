@@ -1,6 +1,6 @@
 # NeuralBazaar - AI-Powered Stock Market Intelligence Dashboard
 
-**Version: 1.0.0**
+**Version: 2.0.0**
 
 **GitHub Author**: AsRanjan007 (Ashutosh Ranjan)
 
@@ -19,6 +19,17 @@
 
 NeuralBazaar is a comprehensive, AI-driven stock market analysis platform designed specifically for Indian markets. Built with Streamlit, TensorFlow, and advanced technical indicators, it provides traders and investors with intelligent insights through LSTM forecasting, multiple trading strategies, and real-time technical analysis.
 
+## ✨ What's New in v2.0.0
+
+- **Version Switching**: Toggle between v1.0.0 (Basic) and v2.0.0 (Full-Featured) modes
+- **Dynamic Trendline**: Real-time SVG trendlines synchronized with actual price data
+- **Enhanced Color Scheme**: Dark green (#00C41F) for improved visibility on trend indicators
+- **Stable State Management**: Fixed version display consistency across page reruns
+- **Streamlined Documentation**: Generic path references for cross-platform compatibility
+- **Code Cleanup**: Removed system-specific references for better portability
+
+📚 **For comprehensive documentation, advanced features, and detailed architecture**, see [README_v2.md](README_v2.md)
+
 ## 🚀 Features
 
 ### Core Functionality
@@ -26,6 +37,9 @@ NeuralBazaar is a comprehensive, AI-driven stock market analysis platform design
 - **Currency Intelligence**: Automatic INR/USD currency detection and conversion for Indian stocks
 - **Real-time Data**: Live stock data fetching via Yahoo Finance API
 - **Interactive Dashboard**: Modern web interface with tabbed navigation
+- **Version Switching**: Choose between lightweight (v1.0.0) or full-featured (v2.0.0) experience
+- **Dynamic Trendlines**: Live price trendlines synchronized with trend indicators (UP/DOWN)
+- **Professional Header**: Beautiful gradient header with stock info, trendline, and trend indicator
 
 ### AI & Machine Learning
 - **LSTM Forecasting**: 7-day price prediction using attention-based neural networks
@@ -116,7 +130,22 @@ Output Layer (Charts, Tables, Reports)
 - **Sell Signal**: Trend = -1 (Downtrend)
 - **Purpose**: Trend-following with dynamic stops
 
-## 🛠️ Installation
+## � Screenshots
+
+Explore the NeuralBazaar interface and features:
+
+| Feature | Screenshot |
+|---------|-----------|
+| **Dashboard & Configuration** | ![Config and Home](screenshots/config_and_home.png) |
+| **Technical Analysis & Indicators** | ![Chart Indicators](screenshots/chart_indicators.png) |
+| **ML Signal Analysis** | ![Technical and ML Signals](screenshots/technical%20and%20Ml%20signal%20analysis.png) |
+| **Sentiment Analysis** | ![Sentiments](screenshots/sentiments.png) |
+| **Performance Analytics** | ![Performance Analytics](screenshots/Performance_analytics.png) |
+| **Signal Distribution** | ![Signal Distribution](screenshots/signal_distribution.png) |
+| **Monthly Performance Heatmap** | ![Monthly Heatmap](screenshots/monthly_run_heatmap.png) |
+| **Debug & Footer** | ![Debug and Footer](screenshots/debug_and_footer.png) |
+
+## �🛠️ Installation
 
 ### Prerequisites
 - Python 3.8+ (Python 3.11+ recommended)
@@ -187,7 +216,7 @@ Output Layer (Charts, Tables, Reports)
 ### Running the Application (Windows)
 ```powershell
 cd path\to\neuralbazaar
-.venv\Scripts\python.exe -m streamlit run main.py
+.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 **The app will open at:** `http://localhost:8501`
@@ -195,7 +224,7 @@ cd path\to\neuralbazaar
 ### Running the Application (Linux/Mac)
 ```bash
 source .venv/bin/activate
-streamlit run main.py
+streamlit run app.py
 ```
 
 ### Basic Workflow
@@ -226,7 +255,7 @@ streamlit run main.py
 **Solution - Windows**:
 ```powershell
 # Use python -m to run streamlit instead of directly calling streamlit.exe
-.venv\Scripts\python.exe -m streamlit run main.py
+.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 #### 3. Port 8501 already in use
@@ -237,7 +266,7 @@ streamlit run main.py
 # Kill the existing streamlit process
 Get-Process streamlit | Stop-Process -Force
 # Then restart
-.venv\Scripts\python.exe -m streamlit run main.py
+.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 #### 4. PowerShell execution policy error
@@ -247,7 +276,7 @@ Get-Process streamlit | Stop-Process -Force
 ```powershell
 # Use direct python execution instead of activating scripts
 .venv\Scripts\python.exe -m pip install -r requirements.txt
-.venv\Scripts\python.exe -m streamlit run main.py
+.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 #### 5. Dependencies conflict or version mismatch
@@ -266,7 +295,7 @@ python -m venv .venv
 
 ```powershell
 # One-liner to get everything running
-cd path\to\neuralbazaar; python -m venv .venv; .venv\Scripts\python.exe -m pip install --upgrade pip; .venv\Scripts\python.exe -m pip install -r requirements.txt; .venv\Scripts\python.exe -m streamlit run main.py
+cd path\to\neuralbazaar; python -m venv .venv; .venv\Scripts\python.exe -m pip install --upgrade pip; .venv\Scripts\python.exe -m pip install -r requirements.txt; .venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 ### Dashboard Tabs
@@ -348,7 +377,27 @@ See the full [LICENSE](LICENSE) file for complete terms and conditions.
 
 **Copyright (c) 2026 Ashutosh Ranjan. All rights reserved.**
 
-## 🙏 Acknowledgments
+## � Recent Improvements (v2.0.0)
+
+### UI/UX Enhancements
+- **Professional Header**: Beautiful gradient background with real-time stock information
+- **Dynamic Trendlines**: SVG trendlines now match actual price movements
+- **Enhanced Colors**: Dark green (#00C41F) for better contrast and visibility
+- **Responsive Layout**: Single-row header with info grid, trendline, and trend indicator
+- **Version Control**: Easy switching between v1.0.0 (Basic) and v2.0.0 (Advanced) modes
+
+### Technical Improvements
+- **State Management**: Fixed version state synchronization across page reruns
+- **Data Type Handling**: Robust normalization for trendline SVG generation
+- **Error Handling**: Enhanced error catching for graceful fallbacks
+- **Code Quality**: Removed system-specific paths for better portability
+
+### Codebase Organization
+- **Generic Path References**: Replaced absolute paths with `<your_project_folder>` placeholders
+- **Clean Documentation**: Removed IITD-specific references for broader distribution
+- **Consolidation**: Organized PNG generation files for better project structure
+
+## �🙏 Acknowledgments
 
 - Yahoo Finance API for market data
 - TensorFlow/Keras for deep learning framework
@@ -361,8 +410,19 @@ See the full [LICENSE](LICENSE) file for complete terms and conditions.
 For questions, issues, or contributions:
 - Open an issue on GitHub
 - Contact: arj.muz@gmail.com
+- **Extended Documentation**: See [README_v2.md](README_v2.md) for comprehensive guides and architecture details
 
 ## 🔄 Version History
+
+- **v2.0.0** (2026-03-29): Major Update
+  - Version switching (v1.0.0 / v2.0.0 modes)
+  - Dynamic trendline visualization synchronized with actual price data
+  - Enhanced color scheme for better visibility
+  - Fixed state management and version display consistency
+  - Streamlined documentation with generic path references
+  - Code refactored for cross-platform compatibility
+  - Graceful shutdown handling with signal handlers
+  - Improved error handling for robust operation
 
 - **v1.0.0** (2026-03-29): Initial release
   - Core dashboard functionality
