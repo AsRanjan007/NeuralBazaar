@@ -14,6 +14,8 @@
 - ❌ **Commercial use prohibited** (requires explicit written permission)
 - ❌ "NeuralBazaar" name and logo are protected trademarks
 
+📁 **Note**: Virtual environment (`.venv`) is excluded from version control. Follow the installation steps below to set up your environment.
+
 
 NeuralBazaar is a comprehensive, AI-driven stock market analysis platform designed specifically for Indian markets. Built with Streamlit, TensorFlow, and advanced technical indicators, it provides traders and investors with intelligent insights through LSTM forecasting, multiple trading strategies, and real-time technical analysis.
 
@@ -123,9 +125,10 @@ Output Layer (Charts, Tables, Reports)
 
 ### Setup Steps (Windows)
 
-1. **Navigate to project directory**
+1. **Clone or download the repository**
    ```powershell
-   cd path\to\neuralbazaar
+   git clone https://github.com/AsRanjan007/NeuralBazaar.git
+   cd NeuralBazaar
    ```
 
 2. **Create virtual environment**
@@ -133,36 +136,50 @@ Output Layer (Charts, Tables, Reports)
    python -m venv .venv
    ```
 
-3. **Install dependencies directly to venv**
+3. **Activate virtual environment**
    ```powershell
-   .venv\Scripts\python.exe -m pip install --upgrade pip
-   .venv\Scripts\python.exe -m pip install -r requirements.txt
+   .venv\Scripts\Activate.ps1
+   ```
+   > **Note**: If you get execution policy errors, use: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+
+4. **Install dependencies**
+   ```powershell
+   pip install --upgrade pip
+   pip install -r requirements.txt
    ```
 
-4. **Verify Installation**
+5. **Verify installation**
    ```powershell
-   .venv\Scripts\python.exe -m pip show streamlit
-   .venv\Scripts\python.exe -m pip show yfinance
-   .venv\Scripts\python.exe -m pip show tensorflow
+   python -c "import streamlit, yfinance, tensorflow; print('All dependencies installed successfully!')"
    ```
 
 ### Setup Steps (Linux/Mac)
 
-1. **Navigate to project directory**
+1. **Clone or download the repository**
    ```bash
-   cd path/to/neuralbazaar
+   git clone https://github.com/AsRanjan007/NeuralBazaar.git
+   cd NeuralBazaar
    ```
 
 2. **Create virtual environment**
    ```bash
    python3 -m venv .venv
+   ```
+
+3. **Activate virtual environment**
+   ```bash
    source .venv/bin/activate
    ```
 
-3. **Install dependencies**
+4. **Install dependencies**
    ```bash
    pip install --upgrade pip
    pip install -r requirements.txt
+   ```
+
+5. **Verify installation**
+   ```bash
+   python -c "import streamlit, yfinance, tensorflow; print('All dependencies installed successfully!')"
    ```
 
 ## 🚀 Usage
