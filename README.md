@@ -360,7 +360,7 @@ See the full [LICENSE](LICENSE) file for complete terms and conditions.
 
 For questions, issues, or contributions:
 - Open an issue on GitHub
-- Contact: ashutosh.ranjan@email.com
+- Contact: arj.muz@gmail.com
 
 ## 🔄 Version History
 
