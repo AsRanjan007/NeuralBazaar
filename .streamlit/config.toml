@@ -9,10 +9,11 @@ showErrorDetails = true
 runOnSave = true
 maxUploadSize = 200
 enableXsrfProtection = true
+headless = true
+port = 8501
 
 [browser]
 gatherUsageStats = false
-serverAddress = "localhost"
 
 [theme]
 primaryColor = "#1A73E8"

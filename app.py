@@ -25,6 +25,17 @@ import nltk
 warnings.filterwarnings("ignore")
 
 # ============================================================================
+# OPTIONAL TENSORFLOW IMPORT (for cloud compatibility)
+# ============================================================================
+
+try:
+    import tensorflow
+    TENSORFLOW_AVAILABLE = True
+except ImportError:
+    TENSORFLOW_AVAILABLE = False
+    warnings.warn("TensorFlow not available. LSTM forecasting disabled. Using scikit-learn instead.")
+
+# ============================================================================
 # LOGGING & GRACEFUL SHUTDOWN CONFIGURATION
 # ============================================================================
 
