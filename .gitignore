@@ -141,4 +141,7 @@ stock_market_dashboard_presentation.pptx
 AAPL_data.csv
 boll_trades.csv
 macd_trades.csv
-rsi_trades.csv
+rsi_trades.csv.venv/
+.venv\\
+rewrite_git_author.py
+.venv/
