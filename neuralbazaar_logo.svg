@@ -1,0 +1,104 @@
+<svg width="100%" viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <!-- Deep purple gradient for dome arch -->
+    <linearGradient id="archGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3C3489"/>
+      <stop offset="100%" stop-color="#7F77DD"/>
+    </linearGradient>
+
+    <!-- Amber glow for neural nodes -->
+    <linearGradient id="nodeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FAC775"/>
+      <stop offset="100%" stop-color="#BA7517"/>
+    </linearGradient>
+
+    <!-- Teal accent gradient for market floor bars -->
+    <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5DCAA5"/>
+      <stop offset="100%" stop-color="#0F6E56"/>
+    </linearGradient>
+  <mask id="imagine-text-gaps-artd87" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="680" height="340" fill="white"/><rect x="306" y="121.4444351196289" width="141.0367889404297" height="56.13333511352539" fill="black" rx="2"/><rect x="306" y="166.44444274902344" width="142.48886108398438" height="56.13333511352539" fill="black" rx="2"/><rect x="307.24444580078125" y="217.91110229492188" width="263.41319274902344" height="19.111111640930176" fill="black" rx="2"/><rect x="568.1326293945312" y="148.95555114746094" width="19.21481704711914" height="16.088889122009277" fill="black" rx="2"/></mask></defs>
+
+  <!-- ══════════════════════════════════════════════
+       EMBLEM: Bazaar dome shape (arch silhouette)
+  ══════════════════════════════════════════════ -->
+
+  <!-- Dome arch base: a wide rounded arch like a market entrance -->
+  <path d="M120 210 L120 160 Q120 80 200 80 Q280 80 280 160 L280 210 Z" fill="url(#archGrad)" opacity="0.92" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.92;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Arch inner cutout for a hollow dome feel -->
+  <path d="M136 210 L136 162 Q136 98 200 98 Q264 98 264 162 L264 210 Z" fill="var(--color-background-primary)" opacity="0.85" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Market floor bars (candlestick/market chart inside the arch) -->
+  <!-- Bar 1 -->
+  <rect x="151" y="160" width="16" height="44" rx="3" fill="url(#barGrad)" opacity="0.9" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Bar 2 (tallest) -->
+  <rect x="176" y="138" width="16" height="66" rx="3" fill="url(#barGrad)" opacity="0.9" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Bar 3 -->
+  <rect x="201" y="150" width="16" height="54" rx="3" fill="url(#barGrad)" opacity="0.9" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Bar 4 -->
+  <rect x="226" y="144" width="16" height="60" rx="3" fill="url(#barGrad)" opacity="0.9" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Arch outline stroke -->
+  <path d="M120 210 L120 160 Q120 80 200 80 Q280 80 280 160 L280 210 Z" fill="none" stroke="#534AB7" stroke-width="2" style="fill:none;stroke:rgb(83, 74, 183);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══════════════════════════════════════════════
+       NEURAL LAYER: nodes floating above the arch dome
+  ══════════════════════════════════════════════ -->
+
+  <!-- Neural connection lines (behind nodes) -->
+  <!-- Left cluster lines -->
+  <line x1="200" y1="58" x2="163" y2="38" stroke="#AFA9EC" stroke-width="1" opacity="0.6" style="fill:rgb(0, 0, 0);stroke:rgb(175, 169, 236);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="200" y1="58" x2="200" y2="32" stroke="#AFA9EC" stroke-width="1" opacity="0.6" style="fill:rgb(0, 0, 0);stroke:rgb(175, 169, 236);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="200" y1="58" x2="237" y2="38" stroke="#AFA9EC" stroke-width="1" opacity="0.6" style="fill:rgb(0, 0, 0);stroke:rgb(175, 169, 236);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.6;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Cross-connections -->
+  <line x1="163" y1="38" x2="200" y2="32" stroke="#AFA9EC" stroke-width="0.7" opacity="0.35" style="fill:rgb(0, 0, 0);stroke:rgb(175, 169, 236);color:rgb(0, 0, 0);stroke-width:0.7px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.35;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="237" y1="38" x2="200" y2="32" stroke="#AFA9EC" stroke-width="0.7" opacity="0.35" style="fill:rgb(0, 0, 0);stroke:rgb(175, 169, 236);color:rgb(0, 0, 0);stroke-width:0.7px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.35;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="163" y1="38" x2="237" y2="38" stroke="#AFA9EC" stroke-width="0.7" opacity="0.25" style="fill:rgb(0, 0, 0);stroke:rgb(175, 169, 236);color:rgb(0, 0, 0);stroke-width:0.7px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.25;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Centre hub node (largest) -->
+  <circle cx="200" cy="58" r="9" fill="url(#nodeGrad)" stroke="#FAC775" stroke-width="1.5" style="stroke:rgb(250, 199, 117);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Satellite nodes -->
+  <circle cx="163" cy="38" r="6" fill="url(#nodeGrad)" stroke="#EF9F27" stroke-width="1" style="stroke:rgb(239, 159, 39);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="200" cy="32" r="6" fill="url(#nodeGrad)" stroke="#EF9F27" stroke-width="1" style="stroke:rgb(239, 159, 39);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="237" cy="38" r="6" fill="url(#nodeGrad)" stroke="#EF9F27" stroke-width="1" style="stroke:rgb(239, 159, 39);color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══════════════════════════════════════════════
+       BASE LINE beneath emblem
+  ══════════════════════════════════════════════ -->
+  <rect x="110" y="210" width="180" height="4" rx="2" fill="url(#archGrad)" opacity="0.7" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.7;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Small accent dots at base corners -->
+  <circle cx="115" cy="212" r="3" fill="#7F77DD" style="fill:rgb(127, 119, 221);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="285" cy="212" r="3" fill="#7F77DD" style="fill:rgb(127, 119, 221);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══════════════════════════════════════════════
+       WORDMARK: NeuralBazaar
+  ══════════════════════════════════════════════ -->
+
+  <!-- Main wordmark split into two weight/color segments -->
+  <text font-family="var(--font-sans)" font-size="42" font-weight="500" fill="#534AB7" text-anchor="start" dominant-baseline="auto" x="310" y="165" style="fill:rgb(83, 74, 183);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:42px;font-weight:500;text-anchor:start;dominant-baseline:auto">Neural</text>
+
+  <text font-family="var(--font-sans)" font-size="42" font-weight="400" fill="var(--color-text-primary)" opacity="0.85" text-anchor="start" dominant-baseline="auto" x="310" y="210" style="fill:rgb(20, 20, 19);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:42px;font-weight:400;text-anchor:start;dominant-baseline:auto">Bazaar</text>
+
+  <!-- Thin separator line between words (vertical rule) -->
+  <line x1="308" y1="170" x2="308" y2="208" stroke="#AFA9EC" stroke-width="1.5" opacity="0.5" mask="url(#imagine-text-gaps-artd87)" style="fill:rgb(0, 0, 0);stroke:rgb(175, 169, 236);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══════════════════════════════════════════════
+       TAGLINE
+  ══════════════════════════════════════════════ -->
+  <text font-family="var(--font-sans)" font-size="12" font-weight="400" fill="#7F77DD" opacity="0.85" text-anchor="start" letter-spacing="3" x="312" y="232" style="fill:rgb(127, 119, 221);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.85;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:start;dominant-baseline:auto">AI · MARKETS · INTELLIGENCE</text>
+
+  <!-- ══════════════════════════════════════════════
+       Small AI badge pill
+  ══════════════════════════════════════════════ -->
+  <rect x="560" y="148" width="36" height="18" rx="9" fill="#3C3489" opacity="0.9" style="fill:rgb(60, 52, 137);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text font-family="var(--font-sans)" font-size="10" font-weight="500" fill="#CECBF6" text-anchor="middle" dominant-baseline="central" x="578" y="157" style="fill:rgb(206, 203, 246);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:10px;font-weight:500;text-anchor:middle;dominant-baseline:central">AI</text>
+
+</svg>
