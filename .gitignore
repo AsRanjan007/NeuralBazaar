@@ -137,6 +137,10 @@ dmypy.json
 *.gif
 *.svg
 
+# Exception: Allow screenshots folder in git
+!screenshots/
+!screenshots/**/*.png
+
 # Diagram files (save locally, don't commit)
 docs/*diagram*.png
 docs/*flow*.png
